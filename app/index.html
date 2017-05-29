@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,7 +27,7 @@
 
 
      <body ng-app="beanCorner">
-         <nav class="navbar header" id="navbar-primary">
+         <nav class="navbar navbar-default" id="navbar-primary">
            <div class="container-fluid">
              <!-- Brand and toggle get grouped for better mobile display -->
              <div class="navbar-header">
@@ -43,53 +44,51 @@
                  <li><a ui-sref="home">Home</a></li>
                  <li><a ui-sref="ourmenu">Our Menu</a></li>
                  <li><a href="#"><img id="logo-navbar-middle" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32877/logo-thing.png" width="200" alt="Logo Thing main logo"></a></li>
-                 <li><a ui-sref="ourservices">About Us</a></li>
+                 <li><a ui-sref="gallery">Gallery</a></li>
                  <li><a ui-sref="contactus">Contact Us</a></li>
                </ul>
              </div>
            </div>
          </nav>
 
-      <div ui-view></div>
+          <div class="content" ui-view></div>
 
-      <div class="footer">
-        <div class="container">
-          <div class="row social-icons">
-            <div class="col-md-6">
-              <h3><strong>Follow us</strong></h3>
-              <a href="https://www.facebook.com/Cake-Lovers-Club-860030574064088/"><i class="fa fa-camera-retro fa-3x"></i></a>
-              <a href="https://www.instagram.com/cakebakerybeauty/"><i class="fa fa-instagram fa-3x"></i></a>
-              <a href="https://fi.pinterest.com/explore/tasty-pastry/"><i class="fa fa-pinterest-square fa-3x"></i></a>
+          <footer class="footer">
+            <div class="container">
+              <div class="row social-icons">
+                <div class="col-md-6">
+                  <h3><strong>Follow us</strong></h3>
+                  <a href="https://www.facebook.com/Cake-Lovers-Club-860030574064088/"><i class="fa fa-camera-retro fa-3x"></i></a>
+                  <a href="https://www.instagram.com/cakebakerybeauty/"><i class="fa fa-instagram fa-3x"></i></a>
+                  <a href="https://fi.pinterest.com/explore/tasty-pastry/"><i class="fa fa-pinterest-square fa-3x"></i></a>
 
-              <div class="copy">
-                  <p><strong>&copy; 2017 TastyPastry - All rights reserved</strong></p>
+                  <div class="copy">
+                      <p><strong>&copy; 2017 TastyPastry - All rights reserved</strong></p>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                    <h3><strong>Opening Hours</strong></h3>
+                    <p>Monday-Friday: 10am - 9pm</p>
+                    <p>Saturday: 10am - 6pm</p>
+                </div>
               </div>
             </div>
+          </footer>
 
-            <div class="col-md-6">
-                <h3><strong>Opening Hours</strong></h3>
-                <p>Monday-Friday: 10am - 9pm</p>
-                <p>Saturday: 10am - 6pm</p>
-            </div>
-          </div>
-        </div>
-      </div>
+         <!-- Modules -->
+          <script type="text/javascript" src="js/app.js"></script>
 
+          <!-- Controllers -->
+          <script type="text/javascript" src="js/controllers/HomeController.js"></script>
+          <script type="text/javascript" src="js/controllers/MenuController.js"></script>
+          <!--<script type="text/javascript" src="js/controllers/AboutUsController.js"></script>
+          <script type="text/javascript" src="js/controllers/ContactUsController.js"></script> -->
 
-
-     <!-- Modules -->
-      <script type="text/javascript" src="js/app.js"></script>
-
-      <!-- Controllers -->
-      <!-- <script type="text/javascript" src="js/controllers/HomeController.js"></script>
-      <script type="text/javascript" src="js/controllers/MenuController.js"></script>
-      <script type="text/javascript" src="js/controllers/AboutUsController.js"></script>
-      <script type="text/javascript" src="js/controllers/ContactUsController.js"></script> -->
-
-      <!-- Directives -->
+          <!-- Directives -->
 
 
-      <!-- Services -->
+          <!-- Services -->
 
     </body>
 

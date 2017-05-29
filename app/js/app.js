@@ -7,17 +7,17 @@ app.config(function($stateProvider, $urlRouterProvider) {
     .state('home', {
       url: '/home',
       templateUrl: '../html/home.html',
-      // controller: 'HomeController'
+      controller: 'HomeController'
     })
     .state('ourmenu', {
       url: '/ourmenu',
       templateUrl: '../html/ourmenu.html',
-      // controller: 'MenuController'
+      controller: 'MenuController'
     })
-    .state('aboutus', {
-      url: '/ourservices',
-      templateUrl: '../html/aboutus.html',
-      // controller: 'AboutUsController'
+    .state('gallery', {
+      url: '/gallery',
+      templateUrl: '../html/gallery.html',
+      // controller: 'GalleryController'
     })
     .state('contactus', {
       url: '/contactus',
