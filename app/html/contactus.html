@@ -2,8 +2,71 @@
   <div class="contactus-background">
   </div>
 
-  <div class="contactus-info">
-    <h2>Need assistance? We’re here.</h2>
-    <h3>Our coffee and tea experts are happy to help.</h3>
-  </div>
+  <div class="container">
+    <div class="contactus-info">
+      <h2>Need assistance? <span class="contactus-info-span">We’re here.</span></h2>
+      <h3>Our coffee and tea experts are happy to help.</h3>
+      <div class="contactus-info-box">
+        <p>Mauris est odio, vestibulum id nunc sed, aliquet facilisis augue</p>
+        <p>Aliquam placerat, quam eu mollis gravida, purus sem rhoncus metus, non laoreet nibh magna id lorem.
+          Aliquam dapibus eget libero eu vestibulum. Sed tortor nisl, varius ac sem in, accumsan semper nibh. In hac habitasse platea dictumst.
+          Vivamus magna felis, tristique sed erat et, accumsan iaculis ligula. Suspendisse potenti. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+      </div>
+
+      <div class="row">
+        <div class="contactus-detail">
+          <div class="col-md-5">
+            <h3>Recent articles</h3>
+            <div  ng-repeat="article in articles">
+              <label>{{ article.title }}</label>
+              <p>{{ article.description }}</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-md-offset-1">
+              <h3>Coffee time</h3>
+              <div class="row">
+                <div class="contactus-intro">
+                  <div class="col-md-5">
+                    <div class="contact-icon">
+                      <img class="cupcake-icon" src="../images/logo-3.png"/>
+                      <div>
+                        <p class="contact-description">
+                          You can find us on below address.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="contact-icon">
+                      <i class="fa fa-clock-o fa-lg"></i>
+                      <div>
+                        <p class="contact-description">
+                          Phone: +1 760-346-3440 <br/>
+                          E-mail: tasty.pastry.ca@gmail.com
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="contact-icon">
+                      <i class="fa fa-map-marker fa-lg" ></i>
+                      <div>
+                        <p class="contact-description">
+                          Weather: {{ weather.main.temp }} °F<br/>
+                          72 216 CA-111, Palm Desert, CA 92260, United States
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-md-7">
+                    <map zoom="15" class="google-map" center="33.727156,-116.402350" draggable="true">
+                      <marker position="33.727156,-116.402350"></marker>
+                    </map>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
 </div>

@@ -17,11 +17,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
     .state('gallery', {
       url: '/gallery',
       templateUrl: '../html/gallery.html',
-      // controller: 'GalleryController'
+      ontroller: 'GalleryController'
     })
     .state('contactus', {
       url: '/contactus',
       templateUrl: '../html/contactus.html',
-      // controller: 'ContactUsController'
+      controller: 'ContactUsController'
     });
 });

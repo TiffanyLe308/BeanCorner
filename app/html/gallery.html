@@ -21,5 +21,20 @@
         Donec vestibulum aliquam turpis, luctus egestas leo. Suspendisse non nulla vitae elit suscipit sagittis ac at velit. Phasellus rhoncus tincidunt quam, sit amet iaculis felis euismod sit amet.
       </p>
     </div>
+
+    <div class="gellery-slideshow">
+        <a href="#/gallery" ng-click="gallery = !gallery"><div class="menu-button">Treats & Favours</div></a>
+        <div ng-show="gallery">
+          <div>
+            <div ng-repeat="gellery in gelleries">
+              <div class="thumbnail">
+                <a href="{{gellery.image}}" data-lightbox="roadtrip">
+                  <img class="menu-gallery-image" ng-src="{{gellery.image}}">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
 </div>
