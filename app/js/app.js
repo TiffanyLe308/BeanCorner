@@ -17,7 +17,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     .state('gallery', {
       url: '/gallery',
       templateUrl: '../html/gallery.html',
-      ontroller: 'GalleryController'
+      controller: 'GalleryController'
     })
     .state('contactus', {
       url: '/contactus',

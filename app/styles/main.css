@@ -126,6 +126,21 @@ h3 {
   float: right;
 }
 
+.gallery-slideshow .gallery-button {
+  float: right;
+  margin-top: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #edeaea;
+  border: 1px solid #edeaea;
+  border-radius: 5px;
+}
+
+.gallery-slideshow .gallery-image {
+  width: 20%;
+  float: right;
+}
+
 /*-----ContactUsPage-----*/
 
 .contactus-background {

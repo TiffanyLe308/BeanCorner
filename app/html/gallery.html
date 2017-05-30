@@ -22,16 +22,14 @@
       </p>
     </div>
 
-    <div class="gellery-slideshow">
-        <a href="#/gallery" ng-click="gallery = !gallery"><div class="menu-button">Treats & Favours</div></a>
-        <div ng-show="gallery">
-          <div>
-            <div ng-repeat="gellery in gelleries">
-              <div class="thumbnail">
-                <a href="{{gellery.image}}" data-lightbox="roadtrip">
-                  <img class="menu-gallery-image" ng-src="{{gellery.image}}">
-                </a>
-              </div>
+    <div class="gallery-slideshow">
+        <a href="#/gallery" ng-click="galleryshow = !galleryshow"><div class="gallery-button">Treats & Favours</div></a>
+        <div ng-show="galleryshow">
+          <div ng-repeat="gallery in galleries">
+            <div class="thumbnail">
+              <a href="{{ gallery.image }}" data-lightbox="roadtrip">
+                <img class="gallery-image" ng-src="{{ gallery.image }}">
+              </a>
             </div>
           </div>
         </div>
