@@ -16,9 +16,6 @@ app.controller('GalleryController', ['$scope', function($scope) {
       image: '../../images/img_9.jpg'
     },
     {
-      image: '../../images/img_13.jpg'
-    },
-    {
       image: '../../images/img_17.jpg'
     },
     {
