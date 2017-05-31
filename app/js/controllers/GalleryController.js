@@ -1,37 +1,31 @@
 app.controller('GalleryController', ['$scope', function($scope) {
-  $scope.galleryshow = false;
-
   $scope.galleries = [
     {
-      image: '../../images/img_1.jpg'
+      image: '../../images/img_5.jpg'
     },
     {
-      image: '../../images/img_2.jpg'
+      image: '../../images/img_6.jpg'
     },
     {
-      image: '../../images/img_3.jpg'
+      image: '../../images/img_7.jpg'
     },
     {
-      image: '../../images/img_4.jpg'
-    }
-  ];
-
-  $scope.cupcakes = [
-    {
-      title: "Nice",
-      image: '../../images/img_1.jpg'
+      image: '../../images/img_8.jpg'
     },
     {
-      title: "Nice",
-      image: '../../images/img_2.jpg'
+      image: '../../images/img_9.jpg'
     },
     {
-      title: "Nice",
-      image: '../../images/img_3.jpg'
+      image: '../../images/img_13.jpg'
     },
     {
-      title: "Nice",
-      image: '../../images/img_4.jpg'
+      image: '../../images/img_17.jpg'
+    },
+    {
+      image: '../../images/img_18.jpg'
+    },
+    {
+      image: '../../images/img_19.jpg'
     }
   ];
 }]);

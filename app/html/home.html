@@ -7,10 +7,22 @@
       <h2>A warm hug in a mug</h2>
       <div class="introduction">
         <div class="row">
-          <div class="col-sm-4 col-md-4" ng-repeat="menu in menus">
-            <h3>{{ menu.title }}</h3>
-            <img class="img-responsive" ng-src="{{ menu.image }}" />
-            <p>{{ menu.description }}</p>
+          <div class="home-intro-desktop">
+            <div class="col-sm-4 col-md-4" ng-repeat="menu in menus">
+              <h3>{{ menu.title }}</h3>
+              <img class="img-responsive" ng-src="{{ menu.image }}" />
+              <p>{{ menu.description_one }} {{ menu.description_two }}</p>
+            </div>
+          </div>
+
+          <div class="home-intro-responsive">
+            <div class="col-xs-8 col-xs-offset-2 col-sm-10 col-sm-offset-1 col-md-4" ng-repeat="menu in menus">
+              <input type="checkbox" class="read-more-state" id="{{ menu.label }}" />
+              <h3>{{ menu.title }}</h3>
+              <img class="img-responsive" ng-src="{{ menu.image }}" />
+              <p class="read-more-wrap">{{ menu.description_one }} <span class="read-more-target">{{ menu.description_two }}</span> </p>
+              <label for="{{ menu.label }}" class="read-more-trigger"></label>
+            </div>
           </div>
         </div>
       </div>
@@ -26,56 +38,38 @@
 
   <div class="gallery">
     <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-      </ol>
-
 
       <!-- Carousel items -->
       <div class="carousel-inner">
 
         <!-- Slide 1 : Active -->
         <div class="item active">
-          <img src="http://cl.ly/image/3J45082V2c1L/banner_01.jpg" alt="">
+          <img src="../images/img_14.jpg" alt="">
           <div class="carousel-caption">
-            <h3>Slide 1</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-          </div><!-- /.carousel-caption -->
-        </div><!-- /Slide1 -->
+          </div>
+        </div>
 
         <!-- Slide 2 -->
         <div class="item ">
-          <img src="http://cl.ly/image/2J0z1t033B25/banner_02.jpg" alt="">
+          <img src="../images/img_15.jpg" alt="">
           <div class="carousel-caption">
-            <h3>Slide 2</h3>
-            <p>Etiam porta sem malesuada magna mollis euismod.</p>
-          </div><!-- /.carousel-caption -->
-        </div><!-- /Slide2 -->
+          </div>
+        </div>
 
         <!-- Slide 3 -->
         <div class="item ">
-          <img src="http://cl.ly/image/1a3i3k0F3B3h/banner_03.jpg" alt="">
+          <img src="../images/img_13.jpg" alt="">
           <div class="carousel-caption">
-            <h3>Slide 3</h3>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-          </div><!-- /.carousel-caption -->
-        </div><!-- /Slide3 -->
+          </div>
+        </div>
 
         <!-- Slide 4 -->
         <div class="item ">
-          <img src="http://cl.ly/image/1n0A2k0Z111n/banner_04.jpg" alt="">
+          <img src="../images/img_16.jpg" alt="">
           <div class="carousel-caption">
-            <h3>Slide 4</h3>
-            <p>Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-          </div><!-- /.carousel-caption -->
-        </div><!-- /Slide4 -->
-
-      </div><!-- /.carousel-inner -->
-
+          </div>
+        </div>
+      </div>
 
       <!-- Controls -->
       <!-- Add "ng-non-bindable" to tell angularjs ignore the conflict with bootstrap ui-->
@@ -89,8 +83,10 @@
           <span class="control-icon next fa fa-chevron-right" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div><!-- /.control-box -->
-    </div><!-- /#myCarousel -->
+      </div>
+    </div>
+
+    <div class="myCarousel-responsive"></div>
   </div>
 
   <div class="container">
@@ -99,7 +95,7 @@
           <div class="col-sm-6 col-md-6">
             <h3>Latest events</h3>
             <div class="row" ng-repeat="lastestevent in lastestevents">
-              <div class="col-md-4 space">
+              <div class="col-xs-4 col-sm-4 col-md-4">
                 <div class="date">
                   <table class="table table-striped">
                     <thead>
@@ -114,7 +110,7 @@
                   </tbody></table>
                 </div>
               </div>
-              <div class="col-md-8">
+              <div class="col-xs-8 col-sm-8 col-md-8">
                 <h4>{{ lastestevent.title }}</h4>
                 <p>{{ lastestevent.description }}</p>
               </div>
@@ -126,7 +122,7 @@
         <div class="col-sm-6 col-md-6">
           <h3>Upcoming events</h3>
           <div class="row" ng-repeat="upcomingevent in upcomingevents">
-            <div class="col-md-4 space">
+            <div class="col-xs-4 col-sm-4 col-md-4">
               <div class="date">
                 <table class="table table-striped">
                   <thead>
@@ -141,7 +137,7 @@
                 </tbody></table>
               </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-xs-8 col-sm-8 col-md-8">
               <h4>{{ upcomingevent.title }}</h4>
               <p>{{ upcomingevent.description }}</p>
             </div>

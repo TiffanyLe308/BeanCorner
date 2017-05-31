@@ -34,12 +34,25 @@ h3 {
 
 /*-----Navbar-----*/
 
+
 #navbar-primary .navbar-nav {
   margin-left: 15%;
 }
 
 #navbar-primary .navbar-right {
   margin-right: 15%;
+}
+
+#navbar-primary ul > li a {
+  font: bold 22px/40px 'Philosopher', cursive;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-default .navbar-collapse {
+  border-top: none;
 }
 
 .brand-centered {
@@ -72,6 +85,14 @@ h3 {
   min-width: 100%;
 }
 
+.home-intro-responsive {
+  display: none;
+}
+
+.myCarousel-responsive {
+  display: none;
+}
+
 /*-----MenuPage-----*/
 
 .ourmenumenu-background {
@@ -102,7 +123,6 @@ h3 {
 .gallery .gallery-intro p {
   border-top:  1px solid #f2eeee;
   border-bottom:  1px solid #f2eeee;
-  float: right;
   padding: 10px;
   line-height: 1.5em;
   position: relative;
@@ -114,7 +134,6 @@ h3 {
 }
 
 .gallery .gallery-intro p span {
-  float: right;
   text-transform: uppercase;
   color: #a34b66;
   display: block;
@@ -122,12 +141,7 @@ h3 {
   letter-spacing: -3px;
 }
 
-.galery-category p {
-  float: right;
-}
-
 .gallery-slideshow .gallery-button {
-  float: right;
   margin-top: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -136,9 +150,17 @@ h3 {
   border-radius: 5px;
 }
 
+.gallery-slideshow .gallery-box {
+  display: inline-block;
+  width: 200px;
+  height: 150px;
+  margin: 1em;
+}
+
 .gallery-slideshow .gallery-image {
   width: 20%;
-  float: right;
+  width: 200px;
+  height: 130px;
 }
 
 /*-----ContactUsPage-----*/
@@ -189,7 +211,7 @@ h3 {
 
 /* Carousel Fading slide */
 .carousel-fade .carousel-inner {
-    height: 300px;
+    height: 350px;
     background: #fff;
 }
 .carousel-fade .carousel-control { z-index: 2; }
@@ -212,6 +234,9 @@ h3 {
     z-index: 1;
 }
 
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+  min-width: 100%;
+}
 
 /* Safari Fix */
 @media all and (transform-3d), (-webkit-transform-3d) {
@@ -304,7 +329,6 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
   margin: 0 3px;
 }
 
-
 /*-----Footer-----*/
 
 .footer {
@@ -337,10 +361,77 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
 
 @media (min-width: 768px) and (max-width: 991px) {
   #navbar-primary .navbar-nav {
-    margin-left: 12%;
+    margin-left: 0;
   }
 
   #navbar-primary .navbar-right {
-    margin-right: 12%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 991px) {
+
+  /*-----HomePage-----*/
+  .home-intro-desktop {
+    display: none;
+  }
+
+  .home-intro-responsive {
+    display: block;
+  }
+
+  .read-more-state {
+    display: none;
+  }
+
+  .read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: 0.6s ease;
+  }
+
+  .read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+  }
+
+  .read-more-state ~ .read-more-trigger:before {
+    content: 'Show more';
+  }
+
+  .read-more-state:checked ~ .read-more-trigger:before {
+    content: 'Show less';
+  }
+
+  .read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    color: #666;
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  /*-----Gallery-----*/
+  .contactus-detail .contactus-title {
+    margin-bottom: 0;
+    padding-top: 2em;
+    border-top: 1px solid #f2eeee;
+  }
+
+  /*-----Carousel-----*/
+  #myCarousel {
+    display: none;
+  }
+
+  .myCarousel-responsive {
+    display: block;
+    height: 250px;
+    background-image: url("../images/img_17.jpg");
+  	background-repeat:  no-repeat;
+  	background-size: cover;
+    background-position: center;
+    min-width: 100%;
   }
 }
