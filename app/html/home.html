@@ -16,7 +16,7 @@
           </div>
 
           <div class="home-intro-responsive">
-            <div class="col-xs-8 col-xs-offset-2 col-sm-10 col-sm-offset-1 col-md-4" ng-repeat="menu in menus">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-4" ng-repeat="menu in menus">
               <input type="checkbox" class="read-more-state" id="{{ menu.label }}" />
               <h3>{{ menu.title }}</h3>
               <img class="img-responsive" ng-src="{{ menu.image }}" />
@@ -30,8 +30,12 @@
 
     <div class="about-us">
       <h2>Roasting coffee - Brewing harmony</h2>
+      <h3>WHO WE ARE</h3>
       <p>
-        In scelerisque diam in lacinia euismod. Curabitur eros libero, semper sit amet nulla sed, dignissim convallis dui. Ut eleifend leo justo, ac scelerisque augue vulputate eu. Sed nec enim vel lectus vestibulum iaculis id a ligula. Nullam lacinia odio laoreet ante tristique, sit amet molestie enim placerat. Quisque faucibus erat non porttitor convallis. Mauris blandit faucibus odio ut fringilla. In hac habitasse platea dictumst. In et quam ut massa laoreet dignissim euismod eget tortor. Duis vehicula eleifend odio sed cursus. Donec ultrices sapien vel tempus blandit.
+        We are passionate about coffee.
+        BeanCorner coffee is a collection of coffee lovers, from all over the world, who infuse our coffee with our own unique blend of cultural insights and tastes.
+        We have a deep connection to the coffee, hospitality and cooking industries, as well as the business and sales world.
+        We each have years of experience in multiple fields, and build upon our individual expertise to bring you the best possible coffee.
       </p>
     </div>
   </div>
@@ -91,28 +95,28 @@
 
   <div class="container">
       <div class="row">
-        <div class="lastest-event">
+        <div class="latest-event">
           <div class="col-sm-6 col-md-6">
             <h3>Latest events</h3>
-            <div class="row" ng-repeat="lastestevent in lastestevents">
+            <div class="row" ng-repeat="latestevent in latestevents">
               <div class="col-xs-4 col-sm-4 col-md-4">
                 <div class="date">
                   <table class="table table-striped">
                     <thead>
                       <tr>
-                        <th>{{ lastestevent.date }}</th>
+                        <th>{{ latestevent.date }}</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>{{ lastestevent.month }}</td>
+                        <td>{{ latestevent.month }}</td>
                       </tr>
                   </tbody></table>
                 </div>
               </div>
               <div class="col-xs-8 col-sm-8 col-md-8">
-                <h4>{{ lastestevent.title }}</h4>
-                <p>{{ lastestevent.description }}</p>
+                <h4>{{ latestevent.title }}</h4>
+                <p>{{ latestevent.description }}</p>
               </div>
             </div>
           </div>

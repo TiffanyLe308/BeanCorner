@@ -1,32 +1,70 @@
 <div class="ourmenu">
-  <div class="ourmenumenu-background">
+  <div class="ourmenu-background">
   </div>
 
   <div class="container">
       <div class="row">
         <div class="ourmenu-list">
-          <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
-            <h2><img class="cupcake-icon" src="../images/logo-3.png"/> Bean Corner Menu</h2>
-            <div>
-                <table class="table table-striped" ng-repeat="espresso in espressos">
-                  <thead>
-                    <tr>
-                      <th>{{ espresso.title }}</th>
-                      <th>{{ espresso.size_one }}</th>
-                      <th>{{ espresso.size_two }}</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr ng-repeat="item in espresso.names">
-                      <td>{{ item.name }}</td>
-                      <td>{{ item.price_one }}</td>
-                      <td>{{ item.price_two }}</td>
-                    </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+          <h2><img class="cupcake-icon" src="../images/logo-3.png"/> Bean Corner Menu</h2>
+          <div class="col-sm-6 col-md-6">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>{{ coffee.title }}</th>
+                  <th>{{ coffee.size_one }}</th>
+                  <th>{{ coffee.size_two }}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="item in coffee.names">
+                  <td>{{ item.name }}</td>
+                  <td>{{ item.price_one | currency }}</td>
+                  <td>{{ item.price_two | currency }}</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-sm-6 col-md-6">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>{{ tea.title }}</th>
+                  <th>{{ tea.size_one }}</th>
+                  <th>{{ tea.size_two }}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="item in tea.names">
+                  <td>{{ item.name }}</td>
+                  <td>{{ item.price_one | currency }}</td>
+                  <td>{{ item.price_two | currency }}</td>
+                </tr>
+            </tbody>
+          </table>
+
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>{{ non.title }}</th>
+                <th>{{ non.size_one }}</th>
+                <th>{{ non.size_two }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="item in non.names">
+                <td>{{ item.name }}</td>
+                <td>{{ item.price_one | currency }}</td>
+                <td>{{ item.price_two | currency }}</td>
+              </tr>
+          </tbody>
+        </table>
+        </div>
       </div>
     </div>
+
+    <p>
+      <em>All coffee and tea can come with ice. Lactose free milk is also ready for your demand.</em>
+    </p>
   </div>
 </div>

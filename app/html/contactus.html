@@ -7,19 +7,22 @@
       <h2>Need assistance? <span class="contactus-info-span">We’re here.</span></h2>
       <h3>Our coffee and tea experts are happy to help.</h3>
       <div class="contactus-info-box">
-        <p>Mauris est odio, vestibulum id nunc sed, aliquet facilisis augue</p>
-        <p>Aliquam placerat, quam eu mollis gravida, purus sem rhoncus metus, non laoreet nibh magna id lorem.
-          Aliquam dapibus eget libero eu vestibulum. Sed tortor nisl, varius ac sem in, accumsan semper nibh. In hac habitasse platea dictumst.
-          Vivamus magna felis, tristique sed erat et, accumsan iaculis ligula. Suspendisse potenti. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        <p>We are a friendly bunch of people so please don't hesitate to get in touch.</p>
+        <p>Whatever information you're looking for, we're happy to help.
+          We have plenty of free parking right outside and lots of delicious coffee inside!
+          We're here to help you get the best from your coffee.
+          Every day we open the doors to our roastery and we do our upmost to challenge perceived perception about coffee, push the boundaries of roasting and brewing, our equipment, and ourselves</p>
       </div>
 
       <div class="row">
         <div class="contactus-detail">
           <div class="col-md-5">
             <h3>Recent articles</h3>
-            <div  ng-repeat="article in articles">
-              <label>{{ article.title }}</label>
-              <p>{{ article.description }}</p>
+            <div ng-repeat="article in articles">
+              <a href="{{ article.link }}" target="_blank"><div class="contactus-article">
+                <label>{{ article.title }}</label>
+                <p>{{ article.description }}</p>
+              </div></a>
             </div>
           </div>
 
@@ -52,15 +55,15 @@
                       <div>
                         <p class="contact-description">
                           Weather: {{ weather.main.temp }} °F<br/>
-                          72 216 CA-111, Palm Desert, CA 92260, United States
+                          1622 National Ave, San Diego, CA 92113, United States
                         </p>
                       </div>
                     </div>
                   </div>
 
                   <div class="col-xs-12 col-md-7">
-                    <map zoom="15" class="google-map" center="33.727156,-116.402350" draggable="true">
-                      <marker position="33.727156,-116.402350"></marker>
+                    <map zoom="15" class="google-map" center="32.703850,-117.149449" draggable="true">
+                      <marker position="32.703850,-117.149449"></marker>
                     </map>
                   </div>
                 </div>
