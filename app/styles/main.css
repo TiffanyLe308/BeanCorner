@@ -74,6 +74,11 @@ h3 {
   top: 0;
 }
 
+.brand-centered img {
+  margin-top: 4.5em;
+  width: 220px;
+}
+
 .brand-centered .navbar-brand {
   display: flex;
   align-items: center;
@@ -133,6 +138,7 @@ h3 {
 .ourmenu .ourmenu-list img {
     width: 45px;
     height: 45px;
+    margin-bottom: 15px;
 }
 
 /*-----GalleryPage-----*/
@@ -404,17 +410,38 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
 /*--------MediaQueries-------*/
 
 @media (max-width: 767px) {
-  .gallery .gallery-intro p, .gallery .gallery-intro p span {
-    font-size: 24px;
-  }
 
   #navbar-primary .navbar-nav {
     text-align: center;
     margin: 7.5px -15px;
   }
 
+  .brand-centered img {
+    margin-top: 2em;
+    width: 150px;
+  }
+
+  .ourmenu .ourmenu-list img {
+      width: 45px;
+      height: 45px;
+      margin-bottom: 15px;
+  }
+
+  .navbar-default .navbar-collapse {
+    margin-top: 1.5em;
+  }
+
   .home-background, .menu-background, .ourmenumenu-background, .gallery-background {
     height: 300px;
+  }
+
+  .ourmenu .ourmenu-list img {
+      width: 35px;
+      height: 35px;
+  }
+
+  .gallery .gallery-intro p, .gallery .gallery-intro p span {
+    font-size: 24px;
   }
 }
 
